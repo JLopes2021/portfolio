@@ -1,16 +1,21 @@
 import Card from 'react-bootstrap/Card';
 import Botoes from "./Botoes";
 import styles from '../layouts/Cards.module.css'
+import LariLogo from '../images/lariphotographer.png'
+import FlapyLogo from '../images/flappyburd.png'
+import BuscaLogo from '../images/buscadorcep.png'
+import NadaLogo from '../images/ionicnadadores.png'
+
 
 
 
 function Cards(){
     return(
-        <div>
+        <div className={styles.geralPagina}>
             <section className={styles.secaoDivs}>
                 <div className={styles.div1}>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img className={styles.imgs} variant="top" img src = { LariLogo } />
                             <Card.Body>
                                 <Card.Title>Site Lari Photographer</Card.Title>
                                     <Card.Text>
@@ -22,7 +27,7 @@ function Cards(){
                 </div>
                 <div className={styles.div2}>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img className={styles.imgs} variant="top" img src = { BuscaLogo } />
                             <Card.Body>
                                 <Card.Title>Buscador de CEP</Card.Title>
                                     <Card.Text>
@@ -34,7 +39,7 @@ function Cards(){
                 </div>
                 <div className={styles.div2}>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img className={styles.imgs} variant="top" img src = { FlapyLogo } />
                             <Card.Body>
                                 <Card.Title>Flappy Bird</Card.Title>
                                     <Card.Text>
@@ -46,7 +51,7 @@ function Cards(){
                 </div>
                 <div className={styles.div2}>
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img className={styles.imgs} variant="top" img src = { NadaLogo } />
                             <Card.Body>
                                 <Card.Title>IONIC Nadadores</Card.Title>
                                     <Card.Text>
