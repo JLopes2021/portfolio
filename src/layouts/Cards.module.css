@@ -1,7 +1,13 @@
+.geralPagina{
+    background-color: #a5caca;
+}
 .secaoDivs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-direction: row;
     margin-left: 5vh;
  
+}
+.imgs{
+    height: 20vh;
 }
